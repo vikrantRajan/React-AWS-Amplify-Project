@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+
+.sign-in-form-container {
+    padding: 50px 0 0 0;
+    
+    .sign-in-form {
+        background: $greyOne;
+        transition: all 0.2s ease;
+        border-radius: 10px;
+        box-shadow: 8px 8px 10px 0px $greyTwo;
+        padding: 50px;
+
+        .sign-in-form-logo-container {
+            text-align: center;
+            padding: 25px 0 50px 0;
+
+            .sign-in-form-logo {
+                width: 100px;
+            }
+
+        }
+        .sign-in-form-submit-button {
+           button { 
+               width: 100%; 
+               transition: all 0.2s ease;
+               &:hover {
+                   color: $primary;
+                   background: $secondary;
+               }
+               &:hover  .sign-in-form  {
+                box-shadow: 10px 10px 10px 0px gray;
+                border: 0.1px solid $secondary;;
+            }
+            }
+        }
+
+        .sign-in-form-input {
+            text-align: center;
+        }
+
+    }
+    
+}
