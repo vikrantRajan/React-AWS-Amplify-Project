@@ -35,7 +35,17 @@
         }
 
         .sign-in-form-input {
-            text-align: center;
+            transition: all 0.2s ease;
+            background-color: $greyTwo;
+            border: none;
+            &:focus {
+                background-color: white;
+                box-shadow: none;
+                border-radius: 0px;
+                border-bottom: 2px solid $greyThree;
+
+            }
+
         }
 
     }

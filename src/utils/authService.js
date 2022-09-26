@@ -12,7 +12,7 @@ class Auth {
         this.validPassowrd = '123'
     }
 
-    SignIn(formData, timer = 5) {
+    SignIn(formData, timer = 900) {
         // axios.post(username, password, url)
         const { username, password } = formData
         if (username === this.validUsername && password === this.validPassowrd) {
@@ -23,7 +23,7 @@ class Auth {
                 token: validJWT
                 }
         } else {
-            return false;
+            throw new Error('Invalid Username or Password');
         }
     }
 

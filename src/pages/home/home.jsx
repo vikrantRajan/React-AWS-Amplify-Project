@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import CardMenu from "../../components/cardMenu/cardMenu.component";
+import Header from "../../components/header/header.component";
 import { validateUserFetch } from "../../redux/slices/auth/auth.slice";
 
 const Home = () => {
@@ -16,7 +18,8 @@ const Home = () => {
     
     return (
         <div>
-            Home
+        <Header title='Home' />
+        <CardMenu /> 
         </div>
     );
 }

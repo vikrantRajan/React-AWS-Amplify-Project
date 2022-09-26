@@ -43,7 +43,8 @@ const SignIn = () => {
       toast.error(message)
     }
 
-    if(isSuccess || user) {
+    if(isSuccess && user) {
+      toast.success(`Welcome to the dashboard`)
       navigate('/dashboard')
     }
 
@@ -74,7 +75,7 @@ const SignIn = () => {
               label="Username"
               className="mb-3"
             >
-              <Form.Control name='username' type='input' placeholder='Enter Username' onChange={onChange} value={ formData.username } />
+              <Form.Control className="sign-in-form-input" name='username' type='input' placeholder='Enter Username' onChange={onChange} value={ formData.username } />
             </FloatingLabel>
 
             <FloatingLabel
@@ -82,7 +83,7 @@ const SignIn = () => {
               label="Password"
               className="mb-3"
             >
-              <Form.Control name='password' type='password' placeholder='Password' onChange={onChange} value={ formData.password } />
+              <Form.Control className="sign-in-form-input" name='password' type='password' placeholder='Password' onChange={onChange} value={ formData.password } />
             </FloatingLabel>
            
 

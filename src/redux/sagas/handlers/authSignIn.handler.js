@@ -7,8 +7,6 @@ export function* handleSignIn(action) {
         const response = yield call(requestSignIn, action.payload)
         yield put(signInSuccess(response))
     } catch (err) {
-        console.log(err)
-        yield put(signInFailure(`error source: signInFailure -> message: ${err.toString()}`))
-        // throw new Error(err)
+        yield put(signInFailure(`${err.toString()}`))
     }
 }

@@ -22,7 +22,6 @@ export const authSlice = createSlice({
             state.user = null;
             state.isLoading = false;
             state.isError = true
-            state.isSuccess = false;
             state.message = action.payload
         },
         validateUserFetch: (state, action) => {
