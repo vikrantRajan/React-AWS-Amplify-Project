@@ -8,12 +8,19 @@
         width: 45px;
     }
     .logout-logo {
-        font-size: 25px;
         margin: 0 0 20px 0;
         position: relative;
+        width: 50px;
+        height: 30px;
+        
+        &:hover {
+            cursor: pointer;
+        }
         svg {
+            width: 50px;
+            height: 30px;
             position: absolute;
-            top: 35%;
+            top: 10%;
             right: 0;
         }
     }

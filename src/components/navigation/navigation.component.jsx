@@ -31,22 +31,21 @@ const NavigationBar = () => {
         <Container fluid>
           <Navbar.Brand href="/"><img src={Logo} alt='logo' className='navigation-bar-logo'/></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
-            </Nav>
-            <OverlayTrigger
-            key='bottom'
-            placement='bottom'
-            overlay={
-              <Tooltip id={`tooltip-bottom`}>
-                Logout
-              </Tooltip>
-            }
-            >
+          <Nav.Link as={Link} to="/">Home</Nav.Link>
+          <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
+          </Nav>
+          <OverlayTrigger
+          placement='left'
+          overlay={
+            <Tooltip id={`tooltip-bottom`}>
+              Logout
+            </Tooltip>
+          }
+          >
             <div className='logout-logo d-flex' onClick={onSignOut} >
-                <TbLogout/>
-                </div>
-                </OverlayTrigger>
+            <TbLogout/>
+            </div>
+          </OverlayTrigger>
                 </Container>
       </Navbar> : <div></div>
     }
