@@ -1,5 +1,5 @@
 {
-  "name": "aws-amplify-react-boilerplate",
+  "name": "react-rtk-redux-saga-boilerplate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
